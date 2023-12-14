@@ -1,0 +1,31 @@
+body{
+    background-color: blueviolet;
+}
+
+.heading{
+    color: sandybrown;
+    text-align: center;
+}
+
+.table{
+    background-color: orange;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+
+.form_element{
+    margin: 5px;
+    padding: 5px;
+}
+
+.table2{
+    margin-top: 3%;
+    margin-left: 17%;
+    width: 70%;
+    height: 50px;
+}
+
+#crudTable{
+    background-color: aqua;
+    font-size: 20px;
+}

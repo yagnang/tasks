@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css"></link>
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="heading">CRUD Application Using Local Storage</h1>
+    <form method="POST" >
+        
+        <table border="1px;" class="table">
+            <tr>
+                <td><label for="task_name">Task Name:-</label></td>
+                <td><input type="text" class="form_element" name="" id="task_name" ></td>
+            </tr>
+            <tr>
+                <td><label for="assigned_from">Assigned From:-</label></td>
+                <td><input type="text" class="form_element" name="" id="assigned_from" ></td>
+            </tr>
+            <tr>
+                <td><label for="assigned_to">Assigned to:-</label></td>
+                <td><input type="text" class="form_element" name="" id="assigned_to" ></td>
+            </tr>
+            <tr>
+                <td><label for="description">Description:-</label></td>
+                <td> <textarea name="" class="form_element" id="description" cols="30" rows="10" ></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="date">Date:-</label></td>
+                <td> <input type="date" class="form_element" name="" id="date" ></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Update" id="Update" onclick="UpdateData()">
+                <input type="submit" value="Add" id="Submit" onclick="AddData()"></td>
+            </tr>
+        </table>
+         
+    </form>
+
+    <br>
+
+
+    <table border="1" class="table2" id="crudTable">
+    <thead>
+        <tr>
+            <th>Task Name</th>
+            <th>Assigned From</th>
+            <th>Assigned to</th>
+            <th>Description</th>
+            <th>Date</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    </table>
+
+    <script type="text/javascript">
+        
+    </script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
