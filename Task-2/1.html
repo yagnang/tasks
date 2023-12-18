@@ -1,0 +1,33 @@
+<!-- factorial -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <label for="factorial">Enter a Factorial number:-</label>
+        <input type="text" name="fact" id="factorial"><br>
+
+        <button type="button" onclick="factorial()">Calculate Factorial</button><br><br>
+
+        <p id="ans"></p>
+    </div>
+
+    <script>
+        function factorial() {
+            var num = document.getElementById("factorial").value;
+            var fact = 1;
+
+            for (var i = 1; i <= num; i++) {
+                fact = fact * i;
+            }
+
+            document.getElementById("ans").innerText = "Factorial: " + fact;
+        }
+    </script>
+</body>
+</html>

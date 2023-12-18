@@ -1,0 +1,39 @@
+<!-- Palidrome -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palidrome Number</title>
+</head>
+<body>
+
+    <div class="container">
+        <label for="palidrome">Enter number</label>
+        <input type="text" name="" id="palidrome">
+
+        <button type="button" onclick="checkPalidrome()">Submit</button>
+
+        <p id="ans"></p>
+    </div>
+    
+
+    <script>
+        function checkPalidrome() {
+            var num = document.getElementById("palidrome").value;
+
+            const numString = num.toString();
+
+            const revString = numString.split('').reverse().join('');
+            
+            if(numString == revString){
+                document.getElementById('ans').innerHTML = "Number is Palidrome"
+            }
+            else{
+                document.getElementById('ans').innerHTML = "Number is not Palidrome"
+            }
+        }
+    </script>
+</body>
+</html>

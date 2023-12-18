@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function printTriangle(rows) {
+            for (var i = 1; i <= rows; i++) {
+                var spaces = ' '.repeat(rows - i);
+                var stars = '*'.repeat(2 * i - 1);
+                console.log(spaces + stars);
+            }
+        }
+
+// Set the number of rows for the triangle
+var numberOfRows = 5;
+printTriangle(numberOfRows);
+
+
+    </script>
+</body>
+</html>
